@@ -1,0 +1,618 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Oswaldo",sans-serif;
+}
+body{
+    background-color: rgb(0, 32, 91);
+}
+
+
+/* cabeçalho */
+header{
+    background-color:rgb(0, 32, 91);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    margin-top: 0;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+}
+
+hr{
+    border: 2px solid;
+    border-color: #ef6a01;
+}
+#contatos{
+    position: absolute;
+    margin-left: 180vh;
+}
+
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.top-header{
+    height: 40px;
+    background-color: rgb(0, 32, 91);
+    padding: 20px 4%;
+    border: 1px solid;
+}
+.top-header .logotipo{
+    width: 10vh;
+    border-radius: 50px;
+}
+
+.top-header .btn-social button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #ef6a01;
+    cursor: pointer;
+    
+}
+
+.bottom-header nav ul li a{
+     font-size: 2.4vh;
+     position: sticky;
+     top: 0;
+     color: #fff;
+     padding: 20px 40px;
+     text-decoration: none;
+     font-weight: 500;
+     display: block;
+     transition: .5s;
+     text-align: center;
+     padding: 25px;
+}
+.bottom-header nav ul li a:hover{
+    width: auto;
+    background-color: #ef6a01;
+    box-shadow: inset 0 0 8px #000;
+}
+.bottom-header #contatos{
+    width: 195.5px;
+}
+.bottom-header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style-type: none;
+}
+.border-drop{
+    border: #ef6a01 1px solid;
+}
+
+.drop-hover{
+    position: relative;
+}
+.drop-hover .drop{
+    width: 100%;
+    position: absolute;
+    background-color: rgb(0, 32, 91);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .9s;
+    text-align: center;
+    border: #ef6a01 1px solid;
+ 
+}
+.drop-hover .drop a{
+    padding: 20px;
+}
+.drop-hover:hover .drop{
+    height: 175px;
+}
+
+/* -------------------------------------------------------------------*/
+/* slides */
+/*--------------------------------------------------------------------*/
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: 570px;
+    display: flex;
+}
+
+
+.slider-content input, .img-mobile{
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 40%;
+    background: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(0, 32, 91);;
+    transition: 0.2s;
+
+}
+
+/* ultimo elemento-filho */
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+.nav-manual .manual-btn:hover{
+    background-color: #ef6a01;
+}
+
+#radio1:checked ~ .nav-auto .manual-btn1{
+    background-color: #ef6a01;
+}
+#radio2:checked ~ .nav-auto .manual-btn2{
+    background-color: #ef6a01;
+}
+#radio3:checked ~ .nav-auto .manual-btn3{
+    background-color: #ef6a01;
+}
+#radio4:checked ~ .nav-auto .manual-btn4{
+    background-color: #ef6a01;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+#radio4:checked ~ .primeiro{
+    margin-left: -75%;
+}
+
+
+/* -------------------------------------------------------------------*/
+/* seções */
+/*--------------------------------------------------------------------*/
+
+.secoes{
+   
+    margin-top: 50px;
+    color: #ccc;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #secao-h1{
+            margin-top: 5vh;
+        }
+
+/* -------------------------------------------------------------------*/
+/* serviços */
+/*--------------------------------------------------------------------*/
+        .conteudo{
+            margin-top: auto;
+            width: 40%;
+        }
+        
+        .img-servicos{
+            cursor: pointer;
+            margin-left: 50px;
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin-top: -60px;
+        }
+        
+        
+        #servicos{
+            display: flex;
+            justify-content: center;
+            margin-top: 10vh;
+            column-gap: 30vh;
+            margin-bottom: 150px;
+        }
+        .titulo-conteudo{
+            font-family: "Oswaldo";
+            text-align: center;
+            color:#ffffff;
+            font-size: 6vh;
+        }
+        .texto-conteudo{
+            font-style: italic;
+            font-family: "Oswaldo";
+            margin-top: 20vh;
+            text-align: center;
+            color: rgb(231, 223, 223);
+        }
+        .botao-conteudo{
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            margin-left: 100px;
+            width: 300px;
+            padding: 20px;
+            border: rgb(221, 203, 203) solid 1px;
+            background-color: white;
+            color:rgb(0, 32, 91);
+            font-size: 25px;
+            font-family: "Oswaldo";
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        
+        .botao-conteudo:hover{
+            color: white;
+            background-color: #ef6a01;
+            box-shadow: inset 0 0 5px #000;
+        }
+
+/* -------------------------------------------------------------------*/
+/* Imagens dos serviços */
+/*--------------------------------------------------------------------*/
+
+.logo{
+    position: absolute;
+    top: -58px;
+    margin-left: 50px;
+    height: 175px;
+    width: 175px;
+}
+.servicos-img{
+    position: absolute;
+}
+
+.servicos-img1, .servicos-img2, .servicos-img3, .servicos-img4{
+    border: 4px solid #ef6a01;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/*2*/
+.servicos-img1{
+    position: absolute;
+    z-index: 3;
+    top: 40px;
+    left: 100px;
+}
+/*3*/
+.servicos-img2{
+    z-index: 2;
+    left: 200px;
+    top: 80px;
+}
+/*1*/
+.servicos-img3{
+    z-index: 4;
+}
+
+/*4*/   
+.servicos-img4{
+    z-index: 1;
+    top: 120px;
+    left: 300px;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------*/
+/* como funcionar */
+/*--------------------------------------------------------------------*/
+
+.como-funciona{
+    display: flex;
+    margin: 0px 90px;
+    gap: 15px;
+    height: 75vh;
+}
+.box-como-funciona{
+    top: 300px;
+    height:450px;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 30px;
+
+}
+
+#h1-como-funciona{
+    font-size: 29px;
+    color: #ccc;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.h1-como-funciona{
+    margin-top: 20px;
+    text-align: center;
+    color: #ef6a01;
+    margin-bottom: 30px;
+}
+
+
+.p-como-funciona{
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 180px;
+    text-align: center;
+    color: white;
+}
+
+
+/* -------------------------------------------------------------------*/
+/* sobre nós */
+/*--------------------------------------------------------------------*/
+
+
+#sobre{
+    height: 85vh;
+  }
+  
+  
+  #logo-sobre{
+      width: 27%;
+      position: absolute;
+      top: 300vh;
+      justify-content: center;
+      left: 37%;
+ 
+    }
+    
+    #atomo-sobre{
+      position: absolute;
+      top: 359.2vh;
+      left: 500px;
+      width: 60vh;
+    
+    }
+    
+    
+    .sobre-texto{
+      color: white;
+      margin: 3%;
+      height: 30vh;
+      text-align:center ;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    
+    
+    .sobre-p{
+      margin-top: 100px;
+      font-size: 25px;
+      width: 83%;
+    
+    }
+    
+    
+    /* drop1 */
+    .dropdown-content-1 {
+      margin-left: 830px;
+      top: 30px;
+    }
+    .dropbtn-1 {
+        top: 28px;
+        left: 686px;
+        margin-top: 1.3vh;
+    }
+    /*------------------*/
+    
+    /* drop2 */
+    .dropdown-content-2{
+        margin-top: 65px;
+        margin-left: 125px;
+    }
+    .dropbtn-2 {
+        left: 525px;
+        margin-top: 272.5vh;
+        margin-left: 39px;
+    }
+    /*------------------*/
+    
+    /* drop3 */
+    .dropdown-content-3 {
+      margin-left: 850px;
+      margin-top: 95px;
+    }
+    .dropbtn-3 {
+        left: 736px;
+        margin-top: 280.5vh;
+        margin-left: -3.5px;
+    }
+    /*------------------*/
+    
+    
+    
+    
+    
+/*--------------------------------------------------------------------*/
+/* generalizações */
+/*--------------------------------------------------------------------*/
+    .dropdown-h1{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    .dropdown-p{
+         font-size: 18px;
+         margin: 20px;
+      }
+    
+    .dropdown-content-1,
+    .dropdown-content-2,
+    .dropdown-content-3{
+      text-align: center;
+      display: none;
+      position: absolute;
+      background-color: #ccc;
+      border: 6px solid #ef6a01;
+      border-radius: 25px;
+      width: 60vh;
+      height: 25vh;
+      }
+    
+    .dropbtn-1,
+    .dropbtn-2,
+    .dropbtn-3{
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        cursor: pointer;
+        border-radius: 50%;
+        color: white;
+        padding: 15px;
+        border: none;
+        border: 3px solid #ef6a01;
+    }
+    
+    .dropbtn-1:hover,
+    .dropbtn-2:hover,
+    .dropbtn-3:hover{
+        background-color: #ef6a01;
+    }
+    
+    .dropdown-1,
+    .dropdown-2
+    .dropdown-3{
+        position: relative;
+        display: inline-block;
+    
+    }
+    
+    /* Alterando a cor do link quando passa o mouse */
+    .dropdown-1:hover .dropdown-content-1,
+    .dropdown-2:hover .dropdown-content-2,
+    .dropdown-3:hover .dropdown-content-3 {display: block;}
+    
+    /* Exibindo o dropdown quando o botão é hover */
+    .dropdown-1:hover .dropdown-content-1,
+    .dropdown-content-2:hover,
+    .dropdown-content-3:hover {display: block;}
+    
+    /* Fazendo o dropdown permanecer visível quando passa o mouse sobre ele */
+    .dropdown-content-1:hover {display: block;}
+    
+    /* Estilizando o dropdown quando o botão está ativo (pressionado) */
+    .dropdown-1:active .dropdown-content-1,
+    .dropdown-2:active .dropdown-content-2,
+    .dropdown-3:active .dropdown-content-3 {display: block;}
+        
+    
+    .dropdown-titulo{
+      font-size: 30px;
+    }
+    .dropdown-paragrafo{
+      font-size: 20px;
+    }
+
+        /* bootstrap */
+        .bi.bi-caret-down{
+            color: #ef6a01;
+        }
+        .bi:hover{
+            .bi.bi-caret-down{
+                color: white;
+            }
+        
+        }
+        .bi{
+            color: #fff;
+        }
+
+
+
+        button{
+            z-index: 100;
+            top: 715px;
+            cursor: pointer;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background: transparent;
+            border: 3px solid pink;
+        }
+        #button-1{
+            z-index: 999;
+            height: 502px;
+            width: 255px;
+            left: 6.36%;
+            border: 4px solid red;
+        }
+        #button-2{
+            border: 4px solid green;
+            z-index: 998;
+            height: 502px;
+            width: 255px;
+            left: 13.8%;
+            top: 758px;
+            
+        }
+
+        #button-3{
+            border: 4px solid yellow;
+            z-index: 997;
+            height: 502px;
+            width: 255px;
+            left: 20.9%;
+            top: 755px;
+        }
+
+        #button-4{
+            z-index: 996;
+            height: 502px;
+            width: 255px;
+            border: 4px solid black;
+            left: 28.6%;
+            top: 830px;
+        }
+
+
+        #img-footer{
+            width: 100%;
+            height: 700px;
+        }
+
+
+/* -------------------------------------------------------------------*/
+/* Responsividade */
+/*--------------------------------------------------------------------*/
